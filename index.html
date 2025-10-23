@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание 3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div id="logo">
+      <img src="popir.jpg" alt="Логотип">
+    </div>
+    <div id="site-name">РЖД</div>
+    <nav>
+      <a href="#links-block">Ссылки</a>
+      <a href="#table-block">Таблица</a>
+      <a href="#form-block">Форма</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- TABLE -->
+    <section id="table-block">
+      <h2>Таблица с поездами</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Направление</th>
+            <th>Номер поезда</th>
+            <th>Время отправления</th>
+            <th>Время прибытия</th>
+            <th>Стоимость</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Москва - Санкт-Петербург</td>
+            <td>001А</td>
+            <td>22:30</td>
+            <td>06:45</td>
+            <td>2500 руб.</td>
+          </tr>
+          <tr>
+            <td>003А</td>
+            <td>23:50</td>
+            <td>08:05</td>
+            <td>2800 руб.</td>
+          </tr>
+          <tr>
+            <td>Москва - Владивосток</td>
+            <td>099Й</td>
+            <td>13:20</td>
+            <td>07:45 (через 6 дн.)</td>
+            <td>15000 руб.</td>
+          </tr>
+          <tr>
+            <td>Москва - Казань</td>
+            <td>031Г</td>
+            <td>08:15</td>
+            <td>13:40</td>
+            <td>1800 руб.</td>
+          </tr>
+          <tr>
+            <td>Москва - Самара</td>
+            <td>105Ж</td>
+            <td>19:10</td>
+            <td>09:25</td>
+            <td>2200 руб.</td>
+          </tr>
+          <tr>
+            <td colspan="2"><strong>ИТОГО поездов</strong></td>
+            <td></td>
+            <td><strong>5 поездов</strong></td>
+            <td><strong>24300 руб.</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- LINKS -->
+    <section id="links-block">
+      <h2>Список ссылок</h2>
+      <ul>
+        <li><a href="https://www.kubsu.ru/ru">Сайт КубГУ</a></li>
+        <li><a href="https://www.kubsu.ru/">Сайт КубГУ (https)</a></li>
+        <li><a href="https://www.rzd.ru/ru/9269"><img src="buy.jpg" width="400"></a></li>
+        <li><a href="inter.html">Внутренняя страница</a></li>
+        <li><a href="#ft">Ссылка на фрагмент</a></li>
+        <li><a href="https://www.aeroflot.ru/sb/app/ru-ru#/search?adults=1&cabin=economy&children=0&&_k=70a8mq">Ссылка с параметрами</a></li>
+        <li><a href="index.html?id=195855">Ссылка с параметром id</a></li>
+        <li><a href="inter.html">Относительная ссылка</a></li>
+        <li><a href="about/index.html">В каталоге about</a></li>
+        <li><a href="../index.html">На уровень выше</a></li>
+        <li><a href="../../index.html">На два уровня выше</a></li>
+        <li>
+          Контекстная ссылка: РЖД — российская 
+          <a href="https://ru.wikipedia.org/wiki/Государственное_предприятие">государственная</a> 
+          <a href="https://ru.wikipedia.org/wiki/Вертикальная_интеграция">вертикально интегрированная</a> 
+          компания, владелец инфраструктуры общего пользования и крупнейший перевозчик сети 
+          <a href="https://ru.wikipedia.org/wiki/Железнодорожный_транспорт_в_России">железных дорог</a>.
+        </li>
+        <li>
+          <a href="https://ru.wikipedia.org/wiki/Российские_железные_дороги#:~:text=Российские%20железные%20дороги">Фрагмент на стороннем сайте</a>
+        </li>
+        <li>
+          <img src="139196051.png" width="400" usemap="#map" alt="фигуры">
+          <map name="map"> 
+            <area shape="rect" alt="прямоугольник" coords="60,170,390,340" href="https://ru.wikipedia.org/wiki/Квадрат">
+            <area shape="circle" alt="круг" coords="590,255,100" href="https://ru.wikipedia.org/wiki/Земля">
+          </map>
+        </li>
+        <li><a href="">Ссылка с пустым href</a></li>
+        <li><a>Ссылка без href</a></li>
+        <li><a href="/s0195855.github.io/index.html" rel="nofollow">Запрещена поисковикам</a></li>
+        <li><!--noindex--><a href="/s0195855.github.io/index.html" rel="nofollow">Не индексировать</a><!--/noindex--></li>
+        <li>
+          Нумерованный список:
+          <ol>
+            <li><a href="https://ru.wikipedia.org/wiki/Москва">Москва</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/Санкт-Петербург">Санкт-Петербург</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/Владивосток">Владивосток</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/Казань">Казань</a></li>
+            <li><a href="https://ru.wikipedia.org/wiki/Самара">Самара</a></li>
+          </ol>
+        </li>
+        <li><a href="ftp://user:password@ftp.server.com/file.txt">FTP с авторизацией</a></li>
+      </ul>
+    </section>
+
+    <!-- FORM -->
+    <section id="form-block">
+      <h2>Оформление билета</h2>
+      <form action="/" method="POST">
+        <label>ФИО Покупателя:<br>
+          <input name="LNF" value="ФИО" />
+        </label><br><br>
+
+        <div id="ft"></div>
+        <label>Номер телефона:<br>
+          <input name="tellephone" type="tel" placeholder="+7" />
+        </label><br><br>
+
+        <label>Электронная почта:<br>
+          <input name="email" type="email" id="email">
+        </label><br><br>
+
+        <label>Введите дату рождения:<br>
+          <input name="date" type="date" />
+        </label><br><br>
+
+        Выберите пол:<br>
+        <label><input type="radio" checked name="human" value="Female"> Женщина</label>
+        <label><input type="radio" name="human" value="Male"> Мужчина</label><br><br>
+
+        <label>Выберите любимый язык программирования:<br>
+          <select name="pr" multiple>
+            <option value="1" selected>Pascal</option>
+            <option value="2">C</option>
+            <option value="3">C++</option>
+            <option value="4">JavaScript</option>
+            <option value="5">PHP</option>
+            <option value="6">Python</option>
+            <option value="7">Java</option>
+            <option value="8">Haskel</option>
+            <option value="9">Clojure</option>
+            <option value="10">Prolog</option>
+            <option value="11">Scala</option>
+          </select>
+        </label><br><br>
+
+        <label>Расскажите о себе:<br>
+          <textarea name="Biography"></textarea>
+        </label><br><br>
+
+        <label><input type="checkbox" checked name="contract"> С контрактом ознакомлен(а)</label><br><br>
+
+        <input type="submit" value="Сохранить">
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>(c) Сладкомедов Ярослав</p>
+  </footer>
+</body>
+</html>
